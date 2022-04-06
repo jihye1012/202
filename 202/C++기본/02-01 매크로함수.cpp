@@ -7,6 +7,7 @@ using namespace std;
 
 #define jegob(A) ((A) * (A)) //;¾È¾¸
 
+
 int main(void)
 {
 	cout << jegob(3+1) << endl; //16
