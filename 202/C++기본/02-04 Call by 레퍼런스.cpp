@@ -2,9 +2,9 @@
 
 using namespace std;
 
-void plus2(int* num)
+void plus2(int& num)
 {
-	*num += 2;
+	num += 2;
 }
 
 
