@@ -2,12 +2,12 @@
 
 using namespace std;
 
-int jegob(int a,int b)
+int jegob(int a,int b=1) //오른쪽에만 수 지정가능
 {
 	return a * a+b;
 }
 
-double jegob(double a, double b)
+double jegob(double a, double b=1.1) //오른쪽에만 수 지정가능
 {
 	return a * a+b;
 }
@@ -15,8 +15,8 @@ double jegob(double a, double b)
 
 int main(void)
 {
-	//함수 오버로딩 (함수의 이름은 같고 매개변수가 다름.)
-	cout << jegob(3 + 1,7) << endl;
-	cout << jegob(3.3,1.1) << endl;
+	
+	cout << jegob(4) << endl; // jegob(4,1)
+	cout << jegob(3.3) << endl; //jegob(3.3,1.1)
 	return 0;
 }
