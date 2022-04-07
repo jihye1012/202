@@ -5,7 +5,7 @@ using namespace std;
 int jegob(int a,int b=1) //오른쪽에만 수 지정가능
 {
 	return a * a+b;
-}
+
 
 double jegob(double a, double b=1.1) //오른쪽에만 수 지정가능
 {
