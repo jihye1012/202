@@ -50,10 +50,10 @@ Student::Student(void)
 	sName = "이사랑";
 	cout << "학번이 등록되었습니다" << endl;
 }
-Student::Student(int Hakbun, string Name)
+Student::Student(int nHakbun, string sName)
 {
-	nHakbun = Hakbun;
-	sName = Name;
+	this->nHakbun = nHakbun;
+	this->sName = sName;
 }
 void Student::show(void)
 {
