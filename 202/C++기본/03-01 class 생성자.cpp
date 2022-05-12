@@ -39,9 +39,12 @@ public:
 
 int main(void)
 {
-	Student stu1=Student();
-	Student stu2 = Student(1111,"JWP");
-	stu2.show();
+	Student *stu1=new Student();
+	Student *stu2 = new Student(1111,"JWP");
+	stu1->show();
+	stu2->show();
+	delete stu1;
+	delete stu2;
 	return 0;
 }
 Student::Student(void)
