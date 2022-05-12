@@ -4,10 +4,14 @@ using namespace std;
 
 int main(void)
 {
-	int* ptr = new int;
-	*ptr = 20;
+	int* ptr = new int[4];
+	for (int i = 0; i < 4; i++)
+	{
+		ptr[i] = 10 + i;
+		cout << ptr[i] << "  ";
+	}
 
-	cout << *ptr << endl;
-
-	delete ptr;
+	
+	delete[]ptr;
+	return 0;
 }
