@@ -15,6 +15,8 @@ private:
 public:
 	Student(void);
 	Student(int Hakbun, const char* Name);
+	//소멸자 : 객체가 메모리에서 해제될 때, 호출되는 함수
+	~Student();
 	void show(void);
 };
 
@@ -40,6 +42,13 @@ Student::Student(int Hakbun, const char* Name)
 	sName = new char[len]; //공간생성
 	strcpy(sName, Name);
 }
+
+Student::~Student()
+{
+	delete[]sName;
+	cout << " 소멸자 호출 " << endl;
+}
+
 void Student::show()
 {
 	cout << "학번은 " << nHakbun << "입니다." << endl;
