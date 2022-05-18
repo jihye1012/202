@@ -15,6 +15,7 @@ private:
 public:
 	Student(void);
 	Student(int Hakbun, const char* Name);
+	Student(const Student& rhs);
 	//소멸자 : 객체가 메모리에서 해제될 때, 호출되는 함수
 	~Student();
 	void show(void);
@@ -23,7 +24,11 @@ public:
 int main(void)
 {
 	Student stu1 = Student(1111, "JWP");
+	//복사생성자 호출
+	Student stu2 = stu1;
+
 	stu1.show();
+	stu2.show();
 	return 0;
 }
 
@@ -41,6 +46,12 @@ Student::Student(int Hakbun, const char* Name)
 	int len = strlen(Name) + 1; //공간개수 측정
 	sName = new char[len]; //공간생성
 	strcpy(sName, Name);
+}
+
+Student::Student(const Student& rhs)
+	:nHakbun(rhs.nHakbun), sName(rhs.sName)
+{
+	cout << "복사생성자 호출" << endl;
 }
 
 Student::~Student()
