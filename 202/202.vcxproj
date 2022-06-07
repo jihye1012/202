@@ -19,9 +19,11 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="C++기본\03-01 class 생성자.cpp">
-      <MultiProcessorCompilation Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</MultiProcessorCompilation>
-    </ClCompile>
+    <ClCompile Include="04-01 연산자 오버로딩.cpp" />
+    <ClCompile Include="04-01.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="04-01.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
