@@ -14,7 +14,7 @@ private:
 	int sex;
 	int age;
 };
-
+ 
 class Tiger : public Animal {
 public:
 	void roar(void) { cout << "¾îÈï" << endl; }
@@ -27,9 +27,14 @@ public:
 
 void main(void)
 {
-	Animal animal;
-	animal.roar();
+	//Animal animal;
+	//animal.roar();
 
-	Dog dog;
-	dog.roar();
+	Animal* animal = new Animal();
+	animal->roar();
+	delete animal;
+	
+		
+	//Dog dog;
+	//dog.roar();
 }
