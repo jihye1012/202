@@ -6,7 +6,7 @@ using namespace std;
 class Animal {
 public:
 	void eat(void) { cout << "µ¿¹°¸ÔÀÌ" << endl; }
-	void roar(void) { cout << "µ¿¹°Â¢¾î" << endl; }
+	virtual void roar(void) { cout << "µ¿¹°Â¢¾î" << endl; }
 	void walk(void) { cout << "µ¿¹°°É¾î" << endl; }
 
 private:
@@ -33,7 +33,10 @@ void main(void)
 	Animal* animal = new Animal();
 	animal->roar();
 	delete animal;
-	
+
+	Dog* dog = new Dog();
+	dog->roar();
+	delete dog;
 		
 	//Dog dog;
 	//dog.roar();
