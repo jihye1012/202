@@ -6,7 +6,7 @@ using namespace std;
 class Animal {
 public:
 	Animal() { cout << "积己" << endl; }
-	~Animal() { cout << "家戈" << endl; }
+	virtual ~Animal() { cout << "家戈" << endl; }
 	void eat(void) { cout << "悼拱冈捞" << endl; }
 	virtual void roar(void) { cout << "悼拱垄绢" << endl; }
 	void walk(void) { cout << "悼拱吧绢" << endl; }
@@ -19,15 +19,15 @@ private:
  
 class Tiger : public Animal {
 public:
-	Tiger() { cout << "积己" << endl; }
-	~Tiger() { cout << "家戈" << endl; }
+	Tiger() { cout << "tiger 积己" << endl; }
+	virtual ~Tiger() { cout << "tiger 家戈" << endl; }
 	void roar(void) { cout << "绢蕊" << endl; }
 };
 
 class Dog : public Animal {
 public:
-	Dog() { cout << "积己" << endl; }
-	~Dog() { cout << "家戈" << endl; }
+	Dog() { cout << "dog 积己" << endl; }
+	virtual ~Dog() { cout << "dog 家戈" << endl; }
 	void roar(void) { cout << "港港" << endl; }
 };
 
