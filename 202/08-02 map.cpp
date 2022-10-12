@@ -14,10 +14,11 @@ using namespace std;
 int main(void)
 {
 	map<string, string>m;
-	m.insert(pair<string, string>("김신", "공유"));
-	m.insert(pair<string, string>("지은탁", "김고은"));
-	m.insert(pair<string, string>("저승사자", "이동욱"));
-	m.insert(pair<string, string>("써니", "유인나"));
+	m["김신"]= "공유";
+	m["지은탁"] = "김고은";
+	m["저승사자"] = "이동욱";
+	m["써니"] = "유인나";
+	//m.insert(pair<string, string>("김신", "공유"));
 
 
 	map<string,string> ::iterator iter;
