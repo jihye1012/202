@@ -31,4 +31,4 @@ int main(void)
 	cout << mydata2.getData() << endl;
 
 	return 0;
-}
+} 
