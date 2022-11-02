@@ -13,7 +13,7 @@ enum Food {
 int main(void)
 {
 	string food_spot[Food::COUNT];
-	
+
 	food_spot[Food::KOREAN] = "삼백집";
 	food_spot[Food::JAPANESE] = "야키토리묵";
 	food_spot[Food::CHINESE] = "태화장";
@@ -24,19 +24,20 @@ int main(void)
 	switch (menu)
 	{
 	case Food::KOREAN:
-		cout << "한식 : " ;
+		cout << "한식 : ";
 		break;
 	case Food::JAPANESE:
-		cout << "일식 : " ;
+		cout << "일식 : ";
 		break;
 	case Food::CHINESE:
-		cout << "중식 : " ;
+		cout << "중식 : ";
 		break;
 
 	default:
-			break;
+		break;
 	}
 	cout << food_spot[menu] << endl;
 
 	return 0;
 }
+
